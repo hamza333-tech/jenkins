@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Cloning Git Repo') {
             steps {
-                echo "hello world"
+                checkout([$class: 'GitSCM', branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/hamza333-tech/jenkins.git']]])
             }
         }
     }          
