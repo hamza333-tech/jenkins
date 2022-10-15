@@ -9,7 +9,7 @@ pipeline {
         }
         stage('ElasticBeanstalk trigger') {
             steps {
-                 sh "/usr/bin/aws ec2 describe-instances"
+                 sh "/usr/local/aws-cli ec2 describe-instances"
             }    
         }
     }          
