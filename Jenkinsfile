@@ -9,8 +9,9 @@ pipeline {
         }
         stage('ElasticBeanstalk trigger') {
             steps {
-                 sh "aws ec2 describe-instances"
-            }    
+                 sh "aws elasticbeanstalk create-application --application-name nodejs-application"
+            }
+            
         }
     }          
 }
