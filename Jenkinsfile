@@ -12,7 +12,7 @@ pipeline {
                  
 //                  sh "aws elasticbeanstalk create-application --application-name nodejs-application"
 //                     sh "eb use Nodesampleapplication-env"
-                    sh "eb init --region eu-west-1 --platform 'Node.js 16 running on 64bit Amazon Linux 2' Nodesampleapplication-env"
+                    sh "eb init --region eu-west-1 --platform 'Node.js 16 running on 64bit Amazon Linux 2' node-sample-application"
                     sh "eb deploy Nodesampleapplication-env"
             } 
             
