@@ -15,7 +15,7 @@ pipeline {
         }
         stage ('ElasticBeanstalk environment creation') {
             steps {
-                 sh "aws elasticbeanstalk create-environment --application-name nodejs-application --environment-name nodejs-application-env --version-label version-1 --solution-stack-name '64bit Amazon Linux 2 v5.6.0 running Node.js 16'"
+                 sh "aws elasticbeanstalk create-environment --application-name nodejs-application --environment-name nodejs-application-env --solution-stack-name '64bit Amazon Linux 2 v5.6.0 running Node.js 16'"
             }
             
         }
