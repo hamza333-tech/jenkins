@@ -11,8 +11,8 @@ pipeline {
             steps {
                  
 //                  sh "aws elasticbeanstalk create-application --application-name nodejs-application"
-//                     sh "eb init"
-                    sh "eb deploy"
+//                     sh "eb use Nodesampleapplication-env"
+                    sh "eb deploy Nodesampleapplication-env"
             } 
             
         }
